@@ -11,8 +11,8 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 5,
-			"ceiling": false,
+			"cluster-count": 2,
+			"ceiling": true,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -34,8 +34,8 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 5,
-			"ceiling": true,
+			"cluster-count": 4,
+			"ceiling": false,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -58,8 +58,8 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 5,
-			"ceiling": false,
+			"cluster-count": 2,
+			"ceiling": true,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -81,8 +81,8 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 5,
-			"ceiling": true,
+			"cluster-count": 3,
+			"ceiling": false,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {
@@ -104,8 +104,8 @@
 				"material": "minecraft:stone",
 				"cluster-size": 8
 			},
-			"cluster-count": 3,
-			"ceiling": true,
+			"cluster-count": 2,
+			"ceiling": false,
 			"retrogen": false,
 			"biome": "all",
 			"dimension": {

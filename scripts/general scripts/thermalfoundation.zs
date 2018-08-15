@@ -1,5 +1,7 @@
 import crafttweaker.item.IItemStack;
 import crafttweaker.liquid.ILiquidStack;
+import crafttweaker.oredict.IOreDictEntry;
+
 val itemsToDisable =[
   <thermalfoundation:tool.hammer_copper>,
   <thermalfoundation:tool.hammer_tin>,
@@ -70,8 +72,12 @@ val craftingToDisable =[
   <thermalfoundation:material:97>,
   <thermalfoundation:material:98>,
   <thermalfoundation:material:99>,
-  <thermalfoundation:material:100>
+  <thermalfoundation:material:100>,
   //Makes electrum, bronze, constantan and invar dust uncraftable
+  <thermalfoundation:material:101>,
+  <thermalfoundation:material:102>,
+  <thermalfoundation:material:103>
+  //Makes Signalium, Lumium, and Enderium blends uncraftable.
 
 
 ] as IItemStack[];
@@ -103,7 +109,8 @@ recipes.addShapeless(fert,
 recipes.addShapeless(fert*4,
   [<ore:dustCharcoal>, <ore:itemSlagRich>,<ore:dustSaltpeter>]);
 
-
+//add things to OreDict
+<ore:drillheadIron>.add(<thermalfoundation:material:656>);
 
 //Renames
 scripts.functions.rename(<thermalfoundation:material:832>,"Solidified Brine");

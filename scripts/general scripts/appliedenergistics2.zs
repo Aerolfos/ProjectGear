@@ -16,60 +16,60 @@ val goldIngot = <ore:ingotGold>;
 val nickelIngot = <ore:ingotNickel>;
 val redstone = <ore:dustRedstone>;
 val glass = <ore:blockGlass>;
+val tinIngot = <ore:ingotTin>;
 
 
-//Replace iron with nickel
+//Replace iron with osmium
 recipes.removeShaped(<appliedenergistics2:material:25>);
 recipes.addShaped(<appliedenergistics2:material:25> * 2,
-	[[goldIngot, nickelIngot, null],
-	 [redstone, <appliedenergistics2:material:23>, nickelIngot],
-	 [goldIngot, nickelIngot, null]]);
+	[[goldIngot, tinIngot, null],
+	 [redstone, <appliedenergistics2:material:23>, tinIngot],
+	 [goldIngot, tinIngot, null]]);
 
 
 recipes.removeShaped(<appliedenergistics2:material:28>);
 recipes.addShaped(<appliedenergistics2:material:28> * 2,
-	[[<minecraft:diamond>, nickelIngot, null],
-	 [redstone, <appliedenergistics2:material:23>, nickelIngot],
-	 [<minecraft:diamond>, nickelIngot, null]]);
+	[[<minecraft:diamond>, tinIngot, null],
+	 [redstone, <appliedenergistics2:material:23>, tinIngot],
+	 [<minecraft:diamond>, tinIngot, null]]);
 
 recipes.removeShaped(<appliedenergistics2:interface>);
 recipes.addShaped(<appliedenergistics2:interface>,
-	[[nickelIngot, glass, nickelIngot],
+	[[tinIngot, glass, tinIngot],
 	 [<appliedenergistics2:material:44>, null, <appliedenergistics2:material:43>],
-	 [nickelIngot, glass, nickelIngot]]);
+	 [tinIngot, glass, tinIngot]]);
 
 
 recipes.removeShaped(<appliedenergistics2:part:240>);
 recipes.addShaped(<appliedenergistics2:part:240>,
 	[[null, null, null],
 	 [null, <appliedenergistics2:material:44>, null],
-	 [nickelIngot, <minecraft:sticky_piston>, nickelIngot]]);
+	 [tinIngot, <minecraft:sticky_piston>, tinIngot]]);
 
 
 recipes.removeShaped(<appliedenergistics2:part:260>);
 recipes.addShaped(<appliedenergistics2:part:260>,
 	[[null, null, null],
-	 [nickelIngot, <appliedenergistics2:material:43>, nickelIngot],
+	 [tinIngot, <appliedenergistics2:material:43>, tinIngot],
 	 [null, <minecraft:piston>, null]]);
 
 
-//Press recipes
 var ingotSteel = <ore:ingotSteel>;
 var plateTin = <ore:plateTin>;
-var plateLead = <ore:plateLead>;
+var plateNickel = <ore:plateNickel>;
 recipes.addShaped(<appliedenergistics2:material:13>,
   [[ingotSteel,plateTin,ingotSteel],
-  [plateLead,<immersiveengineering:mold>,plateLead],
+  [plateNickel,<immersiveengineering:mold>,plateNickel],
   [ingotSteel,plateTin,ingotSteel]]);
 recipes.addShaped(<appliedenergistics2:material:14>,
   [[ingotSteel,plateTin,ingotSteel],
-  [plateLead,<immersiveengineering:mold:2>,plateLead],
+  [plateNickel,<immersiveengineering:mold:2>,plateNickel],
   [ingotSteel,plateTin,ingotSteel]]);
 recipes.addShaped(<appliedenergistics2:material:15>,
   [[ingotSteel,plateTin,ingotSteel],
-  [plateLead,<immersiveengineering:mold:1>,plateLead],
+  [plateNickel,<immersiveengineering:mold:1>,plateNickel],
   [ingotSteel,plateTin,ingotSteel]]);
 recipes.addShaped(<appliedenergistics2:material:19>,
   [[ingotSteel,plateTin,ingotSteel],
-  [plateLead,<immersiveengineering:mold:7>,plateLead],
+  [plateNickel,<immersiveengineering:mold:7>,plateNickel],
   [ingotSteel,plateTin,ingotSteel]]);

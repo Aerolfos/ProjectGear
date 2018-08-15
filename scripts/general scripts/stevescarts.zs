@@ -1,4 +1,5 @@
 import crafttweaker.item.IItemStack;
+import crafttweaker.oredict.IOreDictEntry;
 
 val itemsToDisable =[
   <stevescarts:modulecomponents:17>,
@@ -10,6 +11,9 @@ val itemsToDisable =[
   <stevescarts:cartmodule:89>,
   //Note: Disables Steve's Carts crop/wood farms, as well as the wood cutting core and planter range extended (now useless)
   //note: Disabled to encourage more complex farms
+  <stevescarts:cartmodule:87>,
+  <stevescarts:cartmodule:92>,
+  //Note: Disables autocrafters. Use Buildcraft, Factory Tech or Charset for that.
 ] as IItemStack[];
 scripts.functions.disableItems(itemsToDisable);
 
@@ -24,11 +28,19 @@ recipes.addShaped(<stevescarts:modulecomponents:18>,
 	[[<minecraft:obsidian>, null, <minecraft:obsidian>],
 	 [null, <ore:ingotCobalt>, null],
 	 [<minecraft:obsidian>, null, <minecraft:obsidian>]]);
-	 
+
 	//Alternative divine shield recipe using cobalt instead of dimaond
 recipes.addShaped(<stevescarts:cartmodule:32>,
 	[[<minecraft:obsidian>, <stevescarts:modulecomponents:19>, <minecraft:obsidian>],
 	 [<stevescarts:modulecomponents:19>, <ore:blockCobalt>, <stevescarts:modulecomponents:19>],
 	 [<minecraft:obsidian>, <stevescarts:modulecomponents:19>, <minecraft:obsidian>]]);
-	 
 
+   //adding copper to the iron drill head recipe
+recipes.remove(<stevescarts:cartmodule:42>.withTag({Data: 100 as byte}));
+recipes.addShaped(<stevescarts:cartmodule:42>.withTag({Data: 100 as byte}),
+	[[<minecraft:iron_ingot>, <minecraft:iron_ingot>, null],
+	 [<ore:ingotCopper>, <minecraft:iron_ingot>, <minecraft:iron_ingot>],
+	 [<minecraft:iron_ingot>, <minecraft:iron_ingot>, null]]);
+   
+   //add drill head to oredict
+<ore:drillheadIron>.add(<stevescarts:cartmodule:42>.withTag({Data: 100 as byte}));
